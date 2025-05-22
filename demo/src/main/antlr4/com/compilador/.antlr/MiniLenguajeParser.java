@@ -1,5 +1,4 @@
-// Generated from com\compilador\MiniLenguaje.g4 by ANTLR 4.9.3
-package com.compilador;
+// Generated from d:/Users/Usuario/Desktop/Facultad/5to/1er Cuatrimestre/Tecnicas de Compilacion/TrabajoFinalTC/demo/src/main/antlr4/com/compilador/MiniLenguaje.g4 by ANTLR 4.13.1
 import org.antlr.v4.runtime.atn.*;
 import org.antlr.v4.runtime.dfa.DFA;
 import org.antlr.v4.runtime.*;
@@ -9,9 +8,9 @@ import java.util.List;
 import java.util.Iterator;
 import java.util.ArrayList;
 
-@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast"})
+@SuppressWarnings({"all", "warnings", "unchecked", "unused", "cast", "CheckReturnValue"})
 public class MiniLenguajeParser extends Parser {
-	static { RuntimeMetaData.checkVersion("4.9.3", RuntimeMetaData.VERSION); }
+	static { RuntimeMetaData.checkVersion("4.13.1", RuntimeMetaData.VERSION); }
 
 	protected static final DFA[] _decisionToDFA;
 	protected static final PredictionContextCache _sharedContextCache =
@@ -90,6 +89,7 @@ public class MiniLenguajeParser extends Parser {
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class ProgramContext extends ParserRuleContext {
 		public TerminalNode EOF() { return getToken(MiniLenguajeParser.EOF, 0); }
 		public List<TokenContext> token() {
@@ -102,19 +102,6 @@ public class MiniLenguajeParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_program; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniLenguajeListener ) ((MiniLenguajeListener)listener).enterProgram(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniLenguajeListener ) ((MiniLenguajeListener)listener).exitProgram(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MiniLenguajeVisitor ) return ((MiniLenguajeVisitor<? extends T>)visitor).visitProgram(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final ProgramContext program() throws RecognitionException {
@@ -127,7 +114,7 @@ public class MiniLenguajeParser extends Parser {
 			setState(7);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
-			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << BOOLEAN) | (1L << KEYWORD) | (1L << OPERATOR) | (1L << SEPARATOR) | (1L << ID) | (1L << INTEGER) | (1L << DECIMAL) | (1L << CHARACTER) | (1L << STRING))) != 0)) {
+			while ((((_la) & ~0x3f) == 0 && ((1L << _la) & 1022L) != 0)) {
 				{
 				{
 				setState(4);
@@ -153,6 +140,7 @@ public class MiniLenguajeParser extends Parser {
 		return _localctx;
 	}
 
+	@SuppressWarnings("CheckReturnValue")
 	public static class TokenContext extends ParserRuleContext {
 		public TerminalNode ID() { return getToken(MiniLenguajeParser.ID, 0); }
 		public TerminalNode INTEGER() { return getToken(MiniLenguajeParser.INTEGER, 0); }
@@ -167,19 +155,6 @@ public class MiniLenguajeParser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_token; }
-		@Override
-		public void enterRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniLenguajeListener ) ((MiniLenguajeListener)listener).enterToken(this);
-		}
-		@Override
-		public void exitRule(ParseTreeListener listener) {
-			if ( listener instanceof MiniLenguajeListener ) ((MiniLenguajeListener)listener).exitToken(this);
-		}
-		@Override
-		public <T> T accept(ParseTreeVisitor<? extends T> visitor) {
-			if ( visitor instanceof MiniLenguajeVisitor ) return ((MiniLenguajeVisitor<? extends T>)visitor).visitToken(this);
-			else return visitor.visitChildren(this);
-		}
 	}
 
 	public final TokenContext token() throws RecognitionException {
@@ -191,7 +166,7 @@ public class MiniLenguajeParser extends Parser {
 			{
 			setState(12);
 			_la = _input.LA(1);
-			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << BOOLEAN) | (1L << KEYWORD) | (1L << OPERATOR) | (1L << SEPARATOR) | (1L << ID) | (1L << INTEGER) | (1L << DECIMAL) | (1L << CHARACTER) | (1L << STRING))) != 0)) ) {
+			if ( !((((_la) & ~0x3f) == 0 && ((1L << _la) & 1022L) != 0)) ) {
 			_errHandler.recoverInline(this);
 			}
 			else {
@@ -213,11 +188,16 @@ public class MiniLenguajeParser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\16\21\4\2\t\2\4\3"+
-		"\t\3\3\2\7\2\b\n\2\f\2\16\2\13\13\2\3\2\3\2\3\3\3\3\3\3\2\2\4\2\4\2\3"+
-		"\3\2\3\13\2\17\2\t\3\2\2\2\4\16\3\2\2\2\6\b\5\4\3\2\7\6\3\2\2\2\b\13\3"+
-		"\2\2\2\t\7\3\2\2\2\t\n\3\2\2\2\n\f\3\2\2\2\13\t\3\2\2\2\f\r\7\2\2\3\r"+
-		"\3\3\2\2\2\16\17\t\2\2\2\17\5\3\2\2\2\3\t";
+		"\u0004\u0001\f\u000f\u0002\u0000\u0007\u0000\u0002\u0001\u0007\u0001\u0001"+
+		"\u0000\u0005\u0000\u0006\b\u0000\n\u0000\f\u0000\t\t\u0000\u0001\u0000"+
+		"\u0001\u0000\u0001\u0001\u0001\u0001\u0001\u0001\u0000\u0000\u0002\u0000"+
+		"\u0002\u0000\u0001\u0001\u0000\u0001\t\r\u0000\u0007\u0001\u0000\u0000"+
+		"\u0000\u0002\f\u0001\u0000\u0000\u0000\u0004\u0006\u0003\u0002\u0001\u0000"+
+		"\u0005\u0004\u0001\u0000\u0000\u0000\u0006\t\u0001\u0000\u0000\u0000\u0007"+
+		"\u0005\u0001\u0000\u0000\u0000\u0007\b\u0001\u0000\u0000\u0000\b\n\u0001"+
+		"\u0000\u0000\u0000\t\u0007\u0001\u0000\u0000\u0000\n\u000b\u0005\u0000"+
+		"\u0000\u0001\u000b\u0001\u0001\u0000\u0000\u0000\f\r\u0007\u0000\u0000"+
+		"\u0000\r\u0003\u0001\u0000\u0000\u0000\u0001\u0007";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {
