@@ -25,8 +25,9 @@ tipo
     | 'float'
     | 'char'
     | 'string'
-    | 'bool'
+    | 'boolean'
     | 'void'
+    | 'double'
     ;
 
 // Bloque de sentencias
@@ -125,6 +126,8 @@ DECIMAL: [0-9]+ '.' [0-9]+;
 // Caracteres y cadenas
 CHARACTER: '\'' (~['\\\r\n] | '\\' .) '\'';
 STRING: '"' (~["\\\r\n] | '\\' .)* '"';
+
+
 
 // Comentarios y espacios
 COMMENT: '//' ~[\r\n]* -> skip;

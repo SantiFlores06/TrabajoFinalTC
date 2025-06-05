@@ -1,4 +1,4 @@
-int suma( a,  b) {
+int suma(a, b) {
     return a + b;
 }
 
